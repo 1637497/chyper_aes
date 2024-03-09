@@ -1,4 +1,5 @@
 def mixcolumn(M, A):
+    print('Entrada:', M)
     m = np.zeros((4,4),dtype=int)
     for i in range(0,4):
         for j in range(0,4):
@@ -16,5 +17,5 @@ def mixcolumn(M, A):
                     e ^= aux + M[k][j]
 
             m[i][j] = e
-
+    print('Sortida:', m)
     return m
