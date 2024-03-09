@@ -24,6 +24,13 @@ a = np.array([[2,3,1,1],
 text = np.array([hex(ord(c))[2:] for c in "Irene Castrillo "]).reshape((4,4))
 clau =  np.array([[0x00, 0x11, 0x22, 0x33], [0x44, 0x55, 0x66, 0x77], [0x88, 0x99, 0xaa, 0xbb], [0xcc, 0xdd, 0xee, 0xff]])
 
+
+print('\nKey Transform')
+claus = keytrasform(clau)
+for i in range(len(claus):
+    print('Round', i)
+    print(clau[i])
+
 print('\nAdd Round Key')
 state = addroundkey(text, clau)
 for i in range(9):
