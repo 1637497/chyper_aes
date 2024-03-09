@@ -26,7 +26,7 @@ clau =  np.array([[0x00, 0x11, 0x22, 0x33], [0x44, 0x55, 0x66, 0x77], [0x88, 0x9
 
 
 print('\nKey Transform')
-claus = keytrasform(clau, sbox, racon)
+claus = keytransform(clau, sbox, racon)
 for i in range(len(claus)):
     print('Round', i)
     print(claus[i])
