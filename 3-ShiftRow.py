@@ -1,4 +1,5 @@
 def ShiftRow(m):
+    print('Entrada:', m)
     #segona fila
     aux = m[1,0]
     m[1,0:3] = m[1,1:4]
@@ -13,5 +14,5 @@ def ShiftRow(m):
     aux = m[3,3]
     m[3,1:4] = m[3,0:3]
     m[3,0] = aux
-
+    print('Sortida:', m)
     return m
