@@ -1,4 +1,4 @@
-def ByteSub(sbox, text):
+def bytesub(sbox, text):
     print('Entrada:', text)
     matriu = np.zeros((4,4))
     for i in range(4):
