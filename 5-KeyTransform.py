@@ -1,4 +1,4 @@
-def key_expansion(clau, sbox, racon):
+def keytransform(clau, sbox, racon):
     claus = [clau.copy()]
     for iteracio in range(10):
         ultima_col = np.roll(clau[:, -1], -1)
